@@ -9,3 +9,6 @@ class Led
 	toggle: =>
 		@value = if @value then 0 else 1
 		board.digitalWrite @pin, @value
+
+	blink: (interval) =>
+		setInterval @toggle, interval
