@@ -1,5 +1,6 @@
-Led = require "./led"
-board = require "./board"
+require "./utils/include"
+Led = include "devices/led"
+board = include "board/board"
 #------------------------
 
 board.on "ready", ->

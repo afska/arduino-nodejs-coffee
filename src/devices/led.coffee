@@ -1,5 +1,5 @@
-board = require "./board"
-module.exports = #-------
+board = include "board/board"
+module.exports = #-----------
 
 class Led
 	constructor: (@pin) ->
