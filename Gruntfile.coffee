@@ -9,10 +9,12 @@ module.exports = (grunt) ->
 			compile:
 				expand: true
 				flatten: true
-				cwd: "#{__dirname}/src/"
-				src: ["*.coffee"]
+				cwd: "#{__dirname}/src"
+				src: ["**/*.coffee"]
 				dest: ".js/"
 				ext: ".js"
+#				options:
+#					bare: true
 
 		execute:
 			run:

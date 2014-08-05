@@ -1,25 +1,9 @@
-#class Led
-#	constructor: (@pin) ->
-#		@on = false
-#
-#	toggle: =>
-#		@on = !@on
-#		if @on then @on()
-#		else @off()
-
-five = require "johnny-five"
-board = new five.Board()
-toggleState = false
+Led = require "./led"
+board = require "./board"
+#------------------------
 
 board.on "ready", ->
-	led = five.Led 12
+	console.log "Hello f*ckin' world :D"
 
-	toggleLed = ->
-		toggleState = !toggleState
-
-		if toggleState then led.on()
-		else led.off()
-
-	setInterval toggleLed, 200
-
-console.log("Waiting for the device :O\n");
+	led = new Led 12
+	setInterval led.toggle, 200

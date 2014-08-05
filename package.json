@@ -12,7 +12,6 @@
 		"grunt-contrib-watch": "*",
 		"grunt-execute": "*",
 		
-		"johnny-five": "*",
-		"extend": "*"
+		"johnny-five": "*"
 	}
 }
