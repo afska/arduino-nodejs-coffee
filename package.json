@@ -1,7 +1,18 @@
 {
 	"name": "piano",
+	"description": "Mini-piano with a buzzer on Arduino, controlled by nodejs",
 	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/rodri042/arduino-piano.git"
+	},
 	"dependencies": {
-		"johnny-five": "*"
+		"grunt": "*",
+		"grunt-contrib-coffee": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-execute": "*",
+		
+		"johnny-five": "*",
+		"extend": "*"
 	}
 }
