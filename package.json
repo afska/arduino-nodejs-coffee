@@ -1,10 +1,10 @@
 {
-	"name": "piano",
-	"description": "Mini-piano with a buzzer on Arduino, controlled by nodejs",
+	"name": "arduino-nodejs-coffee",
+	"description": "A template of project to control Arduino by nodejs",
 	"version": "1.0.0",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/rodri042/arduino-piano.git"
+		"url": "git://github.com/rodri042/arduino-nodejs-coffee.git"
 	},
 	"dependencies": {
 		"grunt": "*",
@@ -12,7 +12,7 @@
 		"grunt-contrib-coffee": "*",
 		"grunt-execute": "*",
 		"grunt-contrib-watch": "*",
-		
+
 		"johnny-five": "*"
 	}
 }

@@ -1,5 +1,5 @@
 five = require "johnny-five"
-module.exports = #----------
+module.exports = #---
 
 board = new five.Board()
 
