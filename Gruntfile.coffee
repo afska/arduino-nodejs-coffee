@@ -22,7 +22,7 @@ module.exports = (grunt) ->
 
 		watch:
 			coffee:
-				files: "src/*.coffee"
+				files: "src/**/*.coffee"
 				tasks: ["clean", "coffee:compile", "execute:run"]
 				options:
 					atBegin: true
