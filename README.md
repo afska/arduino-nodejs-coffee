@@ -1,5 +1,5 @@
 ## arduino-nodejs-coffee
-Template for controlling an *Arduino* from *nodejs* with the *Firmata* protocol. It uses *grunt* for compiling the *coffee-script* sources and watching for changes for redeploy.
+Template for controlling an *Arduino* from *nodejs* with the *Firmata* protocol. It uses *grunt* for compiling the *coffee-script* sources and watching changes for redeploy.
 
 ### setup
 ```bash
