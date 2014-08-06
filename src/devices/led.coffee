@@ -3,11 +3,11 @@ module.exports = #-----------
 
 class Led
 	constructor: (@pin) ->
-		@value = 0
-		board.pinMode @pin, 1
+		@value = LOW
+		board.setPinAsOutput @pin
 
 	toggle: =>
-		@value = if @value then 0 else 1
+		@value = if @value then LOW else HIGH
 		board.digitalWrite @pin, @value
 
 	blink: (interval) =>
