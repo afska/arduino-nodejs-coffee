@@ -1,4 +1,4 @@
-board = include "board/board"
+board = include "board"
 module.exports = #-----------
 
 class Led
