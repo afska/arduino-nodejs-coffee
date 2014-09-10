@@ -4,8 +4,15 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks "grunt-execute"
 	grunt.loadNpmTasks "grunt-contrib-watch"
 
+	grunt.registerTask "compile", ["clean", "coffee"]
 	grunt.registerTask "default", ["watch"]
+
 	grunt.initConfig
+		#grunt --textParam=value
+		textParam: grunt.option "textParam" #"value"
+		#grunt --booleanParam
+		booleanParam: grunt.option "booleanParam" #true
+
 		clean: [".js"]
 
 		coffee:
@@ -19,11 +26,12 @@ module.exports = (grunt) ->
 		execute:
 			run:
 				src: [".js/main.js"]
+				options: args: ["<%= textParam %>", "<%= booleanParam %>"]
 
 		watch:
 			coffee:
 				files: "src/**/*.coffee"
-				tasks: ["clean", "coffee:compile", "execute:run"]
+				tasks: ["compile", "execute"]
 				options:
 					atBegin: true
 					interrupt: true

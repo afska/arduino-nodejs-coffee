@@ -13,6 +13,6 @@
 		"grunt-execute": "*",
 		"grunt-contrib-watch": "*",
 
-		"johnny-five": "*"
+		"johnny-five": "^0.8.2"
 	}
 }
